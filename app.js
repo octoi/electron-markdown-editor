@@ -1,4 +1,4 @@
-import { BrowserWindow, app } from 'electron';
+const { BrowserWindow, app } = require('electron');
 
 process.env.NODE_ENV = 'production';
 
@@ -12,12 +12,17 @@ const createMainWindow = () => {
     width: 800,
     height: 600,
     resizable: true,
-    backgroundColor: 'white',
+    center: true,
+    roundedCorners: true,
+    titleBarStyle: 'hidden',
+    backgroundColor: '#141418',
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
     }
   });
+
+  mainWindow.removeMenu();
 
   if (isDev) {
     mainWindow.loadURL('http://localhost:3000'); // load react app
