@@ -12,7 +12,7 @@ export default function App() {
         onChange={(e) => setMarkdown(e.target.value)}
         placeholder='Enter in markdown'
       />
-      <MarkdownToJsx>{markdown}</MarkdownToJsx>
+      <MarkdownToJsx className='md-preview'>{markdown}</MarkdownToJsx>
     </div>
   )
 }

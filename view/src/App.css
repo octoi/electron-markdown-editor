@@ -1,14 +1,13 @@
 :root {
-  --primary-color: #1B1B21;
+  --primary-color: #1b1b21;
   --secondary-color: #141418;
-  --accent-color: #33BB92;
+  --accent-color: #33bb92;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  height: 100%;
 }
 
 body {
@@ -25,7 +24,7 @@ a {
 .app {
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding: 10px;
 }
 
@@ -36,7 +35,45 @@ textarea {
   background: none;
   border: none;
   resize: none;
-
   color: #fff;
   font-size: 20px;
+  border-right: 1px solid var(--secondary-color);
+  margin-right: 10px;
+}
+
+p,
+blockquote,
+ul,
+ol,
+dl,
+table,
+pre {
+  margin: 15px 0;
+}
+
+ul,
+ol {
+  padding-left: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  line-height: 1.7;
+  margin: 1em 0 15px 0;
+}
+
+h1 + p,
+h2 + p,
+h3 + p {
+  margin-top: 10px;
+}
+
+.md-preview {
+  width: 50%;
+  word-break: break-all;
 }
