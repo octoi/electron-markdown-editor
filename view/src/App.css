@@ -10,6 +10,20 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 body {
   background: var(--primary-color);
   color: #fff;
@@ -29,7 +43,7 @@ a {
 }
 
 textarea {
-  width: 50%;
+  width: 100%;
   height: 100%;
   outline: none;
   background: none;
@@ -37,8 +51,6 @@ textarea {
   resize: none;
   color: #fff;
   font-size: 20px;
-  border-right: 1px solid var(--secondary-color);
-  margin-right: 10px;
 }
 
 p,
@@ -73,7 +85,14 @@ h3 + p {
   margin-top: 10px;
 }
 
+.input-text-area {
+  width: 50%;
+  border-right: 1px solid var(--secondary-color);
+  margin-right: 10px;
+}
+
 .md-preview {
   width: 50%;
   word-break: break-all;
+  overflow-y: scroll;
 }

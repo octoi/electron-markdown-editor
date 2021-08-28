@@ -7,11 +7,13 @@ export default function App() {
 
   return (
     <div className='app'>
-      <textarea
-        value={markdown}
-        onChange={(e) => setMarkdown(e.target.value)}
-        placeholder='Enter in markdown'
-      />
+      <div className='input-text-area'>
+        <textarea
+          value={markdown}
+          onChange={(e) => setMarkdown(e.target.value)}
+          placeholder='Enter in markdown'
+        />
+      </div>
       <MarkdownToJsx className='md-preview'>{markdown}</MarkdownToJsx>
     </div>
   )
