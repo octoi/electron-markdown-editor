@@ -1,0 +1,17 @@
+{
+  "name": "electron-markdown-editor",
+  "version": "1.0.0",
+  "description": "Markdown editor using electron",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "nodemon --exec electron ."
+  },
+  "keywords": [],
+  "author": "fadhilsaheer",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^13.2.3",
+    "nodemon": "^2.0.12"
+  }
+}
